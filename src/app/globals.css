@@ -1,26 +1,201 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  color-scheme: light;
+  --page: #ffffff;
+  --ink: #1f2937;
+  --wash: #f3f4f6;
+  --tint: #f9fafb;
+  --flame-tint: #fef2f2;
+  --line: #e5e7eb;
+  --line-strong: #d1d5db;
+  --ink-2: #374151;
+  --muted: #4b5563;
+  --subtle: #6b7280;
+  --flame-text: #b91c1c;
+  --sunset-text: #c2410c;
+  --golden-text: #a16207;
+  --leaf-text: #15803d;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --page: #111827;
+  --ink: #f3f4f6;
+  --wash: #1f2937;
+  --tint: #0f172a;
+  --flame-tint: #2a1519;
+  --line: #374151;
+  --line-strong: #4b5563;
+  --ink-2: #d1d5db;
+  --muted: #9ca3af;
+  --subtle: #9ca3af;
+  --flame-text: #f87171;
+  --sunset-text: #fb923c;
+  --golden-text: #facc15;
+  --leaf-text: #4ade80;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-flame: #e11d2e;
+  --color-sunset: #f97316;
+  --color-golden: #facc15;
+  --color-leaf: #16a34a;
+  /* Fixed dark surface (footer, video section, ticker). Does not flip in dark mode. */
+  --color-charcoal: #1f2937;
+  --color-slate: #374151;
+
+  /* Theme-aware colours: page surface, main text, neutrals, accessible text shades */
+  --color-page: var(--page);
+  --color-ink: var(--ink);
+  --color-wash: var(--wash);
+  --color-tint: var(--tint);
+  --color-flame-tint: var(--flame-tint);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-ink-2: var(--ink-2);
+  --color-muted: var(--muted);
+  --color-subtle: var(--subtle);
+  --color-flame-text: var(--flame-text);
+  --color-sunset-text: var(--sunset-text);
+  --color-golden-text: var(--golden-text);
+  --color-leaf-text: var(--leaf-text);
+
+  /* Light text for use on the fixed dark surfaces */
+  --color-mist: #f3f4f6;
+  --color-silver: #e5e7eb;
+  --color-fog: #d1d5db;
+  --color-faint: #9ca3af;
+
+  /* Share button brand colours */
+  --color-facebook: #1877f2;
+  --color-whatsapp: #128c7e;
+  --color-telegram: #0077b5;
+
+  --font-sans: var(--font-sans-ta), system-ui, sans-serif;
+  --font-serif: var(--font-serif-ta), "Noto Serif", Georgia, serif;
+  --font-poppins: var(--font-poppins), sans-serif;
+
+  --animate-ticker: sg-ticker 50s linear infinite;
+  --animate-drawer-in: sg-drawer-in 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+  --animate-fade-up: sg-fade-up 0.4s ease-out both;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@keyframes sg-ticker {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@keyframes sg-drawer-in {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes sg-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@layer base {
+  html {
+    background: var(--page);
+  }
+
+  body {
+    font-family: var(--font-sans);
+    font-size: 16px;
+    line-height: 1.65;
+    color: var(--ink);
+    background: var(--page);
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: var(--flame-text);
+  }
+
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible {
+    outline: 3px solid #f97316;
+    outline-offset: 2px;
+  }
+}
+
+/* Frosted "glass" for controls and labels that sit on photos and videos. */
+@layer components {
+  .glass {
+    color: #fff;
+    background: rgb(255 255 255 / 0.16);
+    -webkit-backdrop-filter: blur(18px) saturate(180%);
+    backdrop-filter: blur(18px) saturate(180%);
+    border: 1px solid rgb(255 255 255 / 0.38);
+    box-shadow:
+      inset 0 1px 0 rgb(255 255 255 / 0.5),
+      inset 0 -1px 0 rgb(255 255 255 / 0.08),
+      0 10px 30px rgb(0 0 0 / 0.28);
+  }
+
+  .glass-dark {
+    color: #fff;
+    background: rgb(17 24 39 / 0.42);
+    -webkit-backdrop-filter: blur(18px) saturate(160%);
+    backdrop-filter: blur(18px) saturate(160%);
+    border: 1px solid rgb(255 255 255 / 0.22);
+    box-shadow:
+      inset 0 1px 0 rgb(255 255 255 / 0.28),
+      0 10px 30px rgb(0 0 0 / 0.3);
+  }
+
+  @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+    .glass {
+      background: rgb(31 41 55 / 0.7);
+    }
+    .glass-dark {
+      background: rgb(17 24 39 / 0.82);
+    }
+  }
+
+  @media (prefers-reduced-transparency: reduce) {
+    .glass {
+      background: rgb(31 41 55 / 0.9);
+      -webkit-backdrop-filter: none;
+      backdrop-filter: none;
+    }
+    .glass-dark {
+      background: rgb(17 24 39 / 0.94);
+      -webkit-backdrop-filter: none;
+      backdrop-filter: none;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-ticker {
+    animation-play-state: paused;
+  }
+  .animate-drawer-in,
+  .animate-fade-up {
+    animation: none;
+  }
 }

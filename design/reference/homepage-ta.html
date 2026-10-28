@@ -1,0 +1,618 @@
+<!doctype html>
+<html lang="ta">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sangathe homepage, compact header</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+Tamil:wght@500;600;700&amp;family=Noto+Serif:wght@600;700&amp;family=Noto+Sans+Tamil:wght@400;500;600;700&amp;family=Poppins:wght@500;600;700&amp;display=swap">
+<style>
+body{margin:0;background:#FFFFFF}
+a{color:#1F2937;text-decoration:none}
+a:hover{color:#B91C1C}
+@keyframes sgTicker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+input:focus-visible,button:focus-visible,a:focus-visible{outline:3px solid #F97316;outline-offset:2px}
+</style>
+</head>
+<body>
+<div style="font-family: 'Noto Sans Tamil', system-ui, sans-serif; color: #1F2937; background: #FFFFFF; font-size: 16px; line-height: 1.65;">
+
+  <div style="border-bottom: 1px solid #E5E7EB;">
+    <div style="max-width: 1320px; margin: 0 auto; padding: 16px 24px; display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); align-items: center; gap: 12px 24px; font-size: 13px; color: #374151;">
+      <span style="justify-self: start; font-weight: 500;">திங்கள், 26 ஒக்டோபர் 2026</span>
+      <a href="#" style="display: block;"><img src="assets/logo/sangathe-logo-dark.png" alt="Sangathe Digital" style="display: block; height: 84px; width: auto;"></a>
+      <div style="justify-self: end; display: flex; flex-wrap: wrap; justify-content: flex-end; align-items: center; gap: 4px 20px;">
+        <a href="#" style="font-weight: 600; color: #374151;">செய்தி மடல்</a>
+        <span style="display: flex; align-items: center; gap: 6px;">
+          <a href="#" aria-label="Facebook" style="width: 36px; height: 36px; display: flex; align-items: center; justify-content: center;"><img src="assets/icons/dark/facebook.png" alt="" style="width: 22px; height: 22px; display: block;"></a>
+          <a href="#" aria-label="X" style="width: 36px; height: 36px; display: flex; align-items: center; justify-content: center;"><img src="assets/icons/dark/x.png" alt="" style="width: 20px; height: 20px; display: block;"></a>
+          <a href="#" aria-label="YouTube" style="width: 36px; height: 36px; display: flex; align-items: center; justify-content: center;"><img src="assets/icons/dark/youtube.png" alt="" style="width: 24px; height: 24px; display: block;"></a>
+          <a href="#" aria-label="WhatsApp" style="width: 36px; height: 36px; display: flex; align-items: center; justify-content: center;"><img src="assets/icons/dark/whatsapp.png" alt="" style="width: 22px; height: 22px; display: block;"></a>
+          <a href="#" aria-label="Telegram" style="width: 36px; height: 36px; display: flex; align-items: center; justify-content: center;"><img src="assets/icons/dark/telegram.png" alt="" style="width: 22px; height: 22px; display: block;"></a>
+        </span>
+        <button type="button" aria-label="இருண்ட பயன்முறை" style="width: 44px; height: 44px; border-radius: 999px; border: 1px solid #D1D5DB; background: #FFFFFF; color: #1F2937; display: flex; align-items: center; justify-content: center; cursor: pointer;"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"></path></svg></button>
+        <button type="button" aria-label="தேடு" style="width: 44px; height: 44px; border-radius: 999px; border: 0; background: #1F2937; color: #FFFFFF; display: flex; align-items: center; justify-content: center; cursor: pointer;"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-4-4"></path></svg></button>
+      </div>
+    </div>
+  </div>
+
+  <header style="max-width: 1320px; margin: 0 auto; padding: 0 24px; text-align: center;">
+    <nav aria-label="பிரிவுகள்" style="margin-top: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 0 4px; font-weight: 600; font-size: 16px;">
+      <a href="#" style="padding: 14px 16px 11px; color: #B91C1C;">முகப்பு</a>
+      <a href="category-ta.html" style="padding: 14px 16px 11px;">இலங்கை</a>
+      <a href="#" style="padding: 14px 16px 11px;">உலகம்</a>
+      <a href="#" style="padding: 14px 16px 11px;">அரசியல்</a>
+      <a href="#" style="padding: 14px 16px 11px;">வணிகம்</a>
+      <a href="#" style="padding: 14px 16px 11px;">விளையாட்டு</a>
+      <a href="#" style="padding: 14px 16px 11px;">சினிமா</a>
+      <a href="#" style="padding: 14px 16px 11px;">தொழில்நுட்பம்</a>
+      <a href="#" style="padding: 14px 16px 11px;">காணொளி</a>
+      <a href="#" style="padding: 14px 16px 11px;">படங்கள்</a>
+    </nav>
+    <div aria-hidden="true" style="display: flex; height: 4px;"><span style="flex: 6; background: #E11D2E;"></span><span style="flex: 3; background: #F97316;"></span><span style="flex: 2; background: #FACC15;"></span><span style="flex: 1; background: #16A34A;"></span></div>
+  </header>
+
+  <div style="max-width: 1320px; margin: 16px auto 0; padding: 0 24px;">
+    <div style="display: flex; align-items: center; background: #1F2937; color: #F9FAFB; overflow: hidden; border-radius: 4px;">
+      <span style="flex: 0 0 auto; align-self: stretch; display: flex; align-items: center; background: #E11D2E; color: #FFFFFF; font-weight: 700; font-size: 15px; padding: 12px 20px;">முக்கியச் செய்தி</span>
+      <div style="flex: 1 1 auto; min-width: 0; overflow: hidden; padding: 12px 0;">
+        <div style="display: flex; gap: 56px; width: max-content; padding-left: 24px; animation: sgTicker 50s linear infinite;">
+          
+            <a href="#" style="display: flex; align-items: center; gap: 12px; white-space: nowrap; font-weight: 500; font-size: 15px; color: #FFFFFF;"><span aria-hidden="true" style="width: 8px; height: 8px; border-radius: 0 100% 0 100%; background: #FACC15; transform: rotate(45deg);"></span>கிழக்கு மாகாணத்தின் தாழ்நிலப் பகுதிகளுக்கு வெள்ள எச்சரிக்கை</a>
+          
+            <a href="#" style="display: flex; align-items: center; gap: 12px; white-space: nowrap; font-weight: 500; font-size: 15px; color: #FFFFFF;"><span aria-hidden="true" style="width: 8px; height: 8px; border-radius: 0 100% 0 100%; background: #FACC15; transform: rotate(45deg);"></span>க.பொ.த உயர்தரப் பரீட்சை முடிவுகள் இன்று வெளியீடு</a>
+          
+            <a href="#" style="display: flex; align-items: center; gap: 12px; white-space: nowrap; font-weight: 500; font-size: 15px; color: #FFFFFF;"><span aria-hidden="true" style="width: 8px; height: 8px; border-radius: 0 100% 0 100%; background: #FACC15; transform: rotate(45deg);"></span>கொழும்பு-யாழ்ப்பாணம் ரயில் சேவை நாளை முதல் வழமைக்குத் திரும்பும்</a>
+          
+            <a href="#" style="display: flex; align-items: center; gap: 12px; white-space: nowrap; font-weight: 500; font-size: 15px; color: #FFFFFF;"><span aria-hidden="true" style="width: 8px; height: 8px; border-radius: 0 100% 0 100%; background: #FACC15; transform: rotate(45deg);"></span>கிழக்கு மாகாணத்தின் தாழ்நிலப் பகுதிகளுக்கு வெள்ள எச்சரிக்கை</a>
+          
+            <a href="#" style="display: flex; align-items: center; gap: 12px; white-space: nowrap; font-weight: 500; font-size: 15px; color: #FFFFFF;"><span aria-hidden="true" style="width: 8px; height: 8px; border-radius: 0 100% 0 100%; background: #FACC15; transform: rotate(45deg);"></span>க.பொ.த உயர்தரப் பரீட்சை முடிவுகள் இன்று வெளியீடு</a>
+          
+            <a href="#" style="display: flex; align-items: center; gap: 12px; white-space: nowrap; font-weight: 500; font-size: 15px; color: #FFFFFF;"><span aria-hidden="true" style="width: 8px; height: 8px; border-radius: 0 100% 0 100%; background: #FACC15; transform: rotate(45deg);"></span>கொழும்பு-யாழ்ப்பாணம் ரயில் சேவை நாளை முதல் வழமைக்குத் திரும்பும்</a>
+          
+        </div>
+      </div>
+    </div>
+    <div style="margin-top: 14px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 10px;">
+      <span style="display: flex; align-items: center; gap: 8px; min-height: 36px; padding: 0 16px; margin-right: 4px; border-radius: 0 12px 0 12px; background: #1F2937; color: #FFFFFF; font-size: 13px; font-weight: 700; letter-spacing: 1.2px; box-shadow: 0 2px 6px rgba(31,41,55,0.25);"><span style="width: 8px; height: 8px; background: #FACC15; border-radius: 0 100% 0 100%; transform: rotate(45deg);"></span>பிரபலமானவை</span>
+      
+        <a href="#" style="display: flex; align-items: center; min-height: 36px; padding: 0 14px; border-radius: 0 12px 0 12px; border: 1px solid #E11D2E; background: #FFFFFF; color: #1F2937; font-size: 14px; font-weight: 500;">யாழ்ப்பாணம்</a>
+      
+        <a href="#" style="display: flex; align-items: center; min-height: 36px; padding: 0 14px; border-radius: 0 12px 0 12px; border: 1px solid #F97316; background: #FFFFFF; color: #1F2937; font-size: 14px; font-weight: 500;">வானிலை</a>
+      
+        <a href="#" style="display: flex; align-items: center; min-height: 36px; padding: 0 14px; border-radius: 0 12px 0 12px; border: 1px solid #FACC15; background: #FFFFFF; color: #1F2937; font-size: 14px; font-weight: 500;">கிரிக்கெட்</a>
+      
+        <a href="#" style="display: flex; align-items: center; min-height: 36px; padding: 0 14px; border-radius: 0 12px 0 12px; border: 1px solid #16A34A; background: #FFFFFF; color: #1F2937; font-size: 14px; font-weight: 500;">கல்வி</a>
+      
+        <a href="#" style="display: flex; align-items: center; min-height: 36px; padding: 0 14px; border-radius: 0 12px 0 12px; border: 1px solid #E11D2E; background: #FFFFFF; color: #1F2937; font-size: 14px; font-weight: 500;">தேயிலை</a>
+      
+        <a href="#" style="display: flex; align-items: center; min-height: 36px; padding: 0 14px; border-radius: 0 12px 0 12px; border: 1px solid #F97316; background: #FFFFFF; color: #1F2937; font-size: 14px; font-weight: 500;">சினிமா</a>
+      
+    </div>
+  </div>
+
+  <section style="max-width: 1320px; margin: 0 auto; padding: 28px 24px 40px; display: flex; flex-wrap: wrap; gap: 32px 0;">
+    <article style="flex: 6 1 520px; min-width: 0; padding-right: 28px; display: flex; flex-direction: column; gap: 14px;">
+      <a href="#" style="display: block; aspect-ratio: 16 / 10; overflow: hidden; background: #E5E7EB;"><img src="assets/photos/reservoir-spill-gates.jpg" alt="நீர்த்தேக்கத்தின் வான்கதவுகளிலிருந்து வெளியேறும் வெள்ளநீர்" style="display: block; width: 100%; height: 100%; object-fit: cover;"></a>
+      <span style="font-size: 13px; font-weight: 700; letter-spacing: 1px; color: #B91C1C;">இலங்கை · வானிலை</span>
+      <h1 style="margin: 0; font-family: 'Noto Serif Tamil', 'Noto Serif', Georgia, serif; font-weight: 700; font-size: 38px; line-height: 1.4;"><a href="article-ta.html">கனமழை காரணமாக நீர்த்தேக்கங்களின் வான்கதவுகள் திறப்பு</a></h1>
+      <p style="margin: 0; font-size: 18px; color: #374151;">தாழ்நிலப் பகுதிகளில் வசிப்பவர்கள் அவதானமாக இருக்குமாறு அனர்த்த முகாமைத்துவ நிலையம் அறிவுறுத்தியுள்ளது.</p>
+      <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px; font-size: 13px; color: #4B5563;">
+        <span>[செய்தியாளர் பெயர்] · 25 நிமிடங்களுக்கு முன்</span>
+        <span style="display: flex; flex-wrap: wrap; align-items: center; gap: 6px;">பகிர்க
+          <a href="#" aria-label="Facebook-இல் பகிர்க" style="width: 40px; height: 40px; border-radius: 999px; background: #1877F2; display: flex; align-items: center; justify-content: center;"><img src="assets/icons/white/facebook.png" alt="" style="width: 22px; height: 22px; display: block;"></a>
+          <a href="#" aria-label="X-இல் பகிர்க" style="width: 40px; height: 40px; border-radius: 999px; background: #000000; display: flex; align-items: center; justify-content: center;"><img src="assets/icons/white/x.png" alt="" style="width: 18px; height: 18px; display: block;"></a>
+          <a href="#" aria-label="WhatsApp-இல் பகிர்க" style="width: 40px; height: 40px; border-radius: 999px; background: #128C7E; display: flex; align-items: center; justify-content: center;"><img src="assets/icons/white/whatsapp.png" alt="" style="width: 20px; height: 20px; display: block;"></a>
+          <a href="#" aria-label="Telegram-இல் பகிர்க" style="width: 40px; height: 40px; border-radius: 999px; background: #0077B5; display: flex; align-items: center; justify-content: center;"><img src="assets/icons/white/telegram.png" alt="" style="width: 22px; height: 22px; display: block;"></a>
+        </span>
+      </div>
+      <ul style="list-style: none; margin: 4px 0 0; padding: 14px 0 0; border-top: 1px solid #E5E7EB; display: flex; flex-direction: column; gap: 8px;">
+        <li style="display: flex; gap: 10px; align-items: baseline;"><span aria-hidden="true" style="flex: 0 0 8px; height: 8px; background: #E11D2E; border-radius: 0 100% 0 100%; transform: rotate(45deg);"></span><a href="#" style="font-weight: 600;">வெள்ள எச்சரிக்கை: பாதிக்கப்படக்கூடிய பகுதிகள்</a></li>
+        <li style="display: flex; gap: 10px; align-items: baseline;"><span aria-hidden="true" style="flex: 0 0 8px; height: 8px; background: #E11D2E; border-radius: 0 100% 0 100%; transform: rotate(45deg);"></span><a href="#" style="font-weight: 600;">அவசர உதவிக்கான தொலைபேசி இலக்கங்கள்</a></li>
+      </ul>
+    </article>
+
+    <div style="flex: 3 1 260px; min-width: 0; padding: 0 28px; border-left: 1px solid #E5E7EB; display: flex; flex-direction: column; gap: 22px;">
+      <article style="display: flex; flex-direction: column; gap: 10px; padding-bottom: 22px; border-bottom: 1px solid #E5E7EB;">
+        <a href="#" style="display: block; aspect-ratio: 3 / 2; overflow: hidden; background: #E5E7EB;"><img src="assets/photos/security-checkpoint.jpg" alt="சோதனைச் சாவடியில் பாதுகாப்புப் படையினர்" style="display: block; width: 100%; height: 100%; object-fit: cover;"></a>
+        <span style="font-size: 12px; font-weight: 700; letter-spacing: 1px; color: #C2410C;">உலகம்</span>
+        <h2 style="margin: 0; font-family: 'Noto Serif Tamil', 'Noto Serif', Georgia, serif; font-weight: 700; font-size: 21px; line-height: 1.5;"><a href="#">மத்திய கிழக்கில் பதற்றம்: சோதனைச் சாவடிகளில் பாதுகாப்பு அதிகரிப்பு</a></h2>
+        <p style="margin: 0; font-size: 15px; color: #374151;">பிராந்தியத்தில் பயணக் கட்டுப்பாடுகள் விதிக்கப்பட்டுள்ளன.</p>
+        <span style="font-size: 12px; color: #4B5563;">1 மணி நேரத்துக்கு முன்</span>
+      </article>
+      <article style="display: flex; flex-direction: column; gap: 10px;">
+        <a href="#" style="display: block; aspect-ratio: 3 / 2; overflow: hidden; background: #E5E7EB;"><img src="assets/photos/cargo-ship-harbour.jpg" alt="சூரிய உதயத்தில் துறைமுகத்தில் சரக்குக் கப்பல்" style="display: block; width: 100%; height: 100%; object-fit: cover;"></a>
+        <span style="font-size: 12px; font-weight: 700; letter-spacing: 1px; color: #C2410C;">வணிகம்</span>
+        <h2 style="margin: 0; font-family: 'Noto Serif Tamil', 'Noto Serif', Georgia, serif; font-weight: 700; font-size: 21px; line-height: 1.5;"><a href="#">தேயிலை ஏற்றுமதிக்குப் புதிய சந்தைகளைத் தேடும் இலங்கை</a></h2>
+        <p style="margin: 0; font-size: 15px; color: #374151;">ஏற்றுமதியை அதிகரிக்கப் புதிய வர்த்தக ஒப்பந்தங்கள் குறித்துப் பேச்சுவார்த்தை நடைபெறுகிறது.</p>
+        <span style="font-size: 12px; color: #4B5563;">2 மணி நேரத்துக்கு முன்</span>
+      </article>
+    </div>
+
+    <aside aria-label="சமீபத்திய செய்திகள்" style="flex: 3 1 260px; min-width: 0; padding-left: 28px; border-left: 1px solid #E5E7EB;">
+      <h2 style="margin: 0 0 6px; display: flex; align-items: center; gap: 10px; font-size: 15px; font-weight: 700; letter-spacing: 1px;"><span aria-hidden="true" style="width: 11px; height: 11px; border-radius: 0 100% 0 100%; background: #E11D2E; transform: rotate(45deg);"></span>சமீபத்திய செய்திகள்</h2>
+      <ol style="list-style: none; margin: 0; padding: 0;">
+        
+          <li style="display: flex; gap: 12px; align-items: flex-start; padding: 12px 0; border-bottom: 1px solid #E5E7EB;">
+            <a href="#" tabindex="-1" aria-hidden="true" style="flex: 0 0 84px; height: 56px; overflow: hidden; background: #E5E7EB;">
+              <img src="assets/photos/reservoir-spill-gates.jpg" alt="" style="display: block; width: 100%; height: 100%; object-fit: cover;">
+            </a>
+            <div style="display: flex; flex-direction: column; gap: 4px; min-width: 0;">
+              <a href="#" style="font-weight: 600; font-size: 15px; line-height: 1.5;">கிழக்கு மாகாணத்தில் வெள்ள எச்சரிக்கை</a>
+              <span style="font-size: 12px; color: #4B5563;">18 நிமிடங்களுக்கு முன்</span>
+            </div>
+          </li>
+        
+          <li style="display: flex; gap: 12px; align-items: flex-start; padding: 12px 0; border-bottom: 1px solid #E5E7EB;">
+            <a href="#" tabindex="-1" aria-hidden="true" style="flex: 0 0 84px; height: 56px; overflow: hidden; background: #E5E7EB;">
+              
+            </a>
+            <div style="display: flex; flex-direction: column; gap: 4px; min-width: 0;">
+              <a href="#" style="font-weight: 600; font-size: 15px; line-height: 1.5;">உயர்தரப் பரீட்சை முடிவுகள் இன்று வெளியீடு</a>
+              <span style="font-size: 12px; color: #4B5563;">30 நிமிடங்களுக்கு முன்</span>
+            </div>
+          </li>
+        
+          <li style="display: flex; gap: 12px; align-items: flex-start; padding: 12px 0; border-bottom: 1px solid #E5E7EB;">
+            <a href="#" tabindex="-1" aria-hidden="true" style="flex: 0 0 84px; height: 56px; overflow: hidden; background: #E5E7EB;">
+              
+            </a>
+            <div style="display: flex; flex-direction: column; gap: 4px; min-width: 0;">
+              <a href="#" style="font-weight: 600; font-size: 15px; line-height: 1.5;">கொழும்பு பங்குச் சந்தை உயர்வுடன் ஆரம்பம்</a>
+              <span style="font-size: 12px; color: #4B5563;">45 நிமிடங்களுக்கு முன்</span>
+            </div>
+          </li>
+        
+          <li style="display: flex; gap: 12px; align-items: flex-start; padding: 12px 0; border-bottom: 1px solid #E5E7EB;">
+            <a href="#" tabindex="-1" aria-hidden="true" style="flex: 0 0 84px; height: 56px; overflow: hidden; background: #E5E7EB;">
+              
+            </a>
+            <div style="display: flex; flex-direction: column; gap: 4px; min-width: 0;">
+              <a href="#" style="font-weight: 600; font-size: 15px; line-height: 1.5;">கொழும்பு-யாழ்ப்பாணம் ரயில் சேவை நாளை முதல் வழமைக்கு</a>
+              <span style="font-size: 12px; color: #4B5563;">55 நிமிடங்களுக்கு முன்</span>
+            </div>
+          </li>
+        
+          <li style="display: flex; gap: 12px; align-items: flex-start; padding: 12px 0; border-bottom: 1px solid #E5E7EB;">
+            <a href="#" tabindex="-1" aria-hidden="true" style="flex: 0 0 84px; height: 56px; overflow: hidden; background: #E5E7EB;">
+              
+            </a>
+            <div style="display: flex; flex-direction: column; gap: 4px; min-width: 0;">
+              <a href="#" style="font-weight: 600; font-size: 15px; line-height: 1.5;">தேசிய பாடசாலை விளையாட்டுப் போட்டிகள் நாளை ஆரம்பம்</a>
+              <span style="font-size: 12px; color: #4B5563;">1 மணி நேரத்துக்கு முன்</span>
+            </div>
+          </li>
+        
+          <li style="display: flex; gap: 12px; align-items: flex-start; padding: 12px 0; border-bottom: 1px solid #E5E7EB;">
+            <a href="#" tabindex="-1" aria-hidden="true" style="flex: 0 0 84px; height: 56px; overflow: hidden; background: #E5E7EB;">
+              <img src="assets/photos/town-rain.jpg" alt="" style="display: block; width: 100%; height: 100%; object-fit: cover;">
+            </a>
+            <div style="display: flex; flex-direction: column; gap: 4px; min-width: 0;">
+              <a href="#" style="font-weight: 600; font-size: 15px; line-height: 1.5;">வடக்கில் இன்று மாலை இடியுடன் கூடிய மழைக்கு வாய்ப்பு</a>
+              <span style="font-size: 12px; color: #4B5563;">2 மணி நேரத்துக்கு முன்</span>
+            </div>
+          </li>
+        
+          <li style="display: flex; gap: 12px; align-items: flex-start; padding: 12px 0; border-bottom: 1px solid #E5E7EB;">
+            <a href="#" tabindex="-1" aria-hidden="true" style="flex: 0 0 84px; height: 56px; overflow: hidden; background: #E5E7EB;">
+              
+            </a>
+            <div style="display: flex; flex-direction: column; gap: 4px; min-width: 0;">
+              <a href="#" style="font-weight: 600; font-size: 15px; line-height: 1.5;">புதிய தமிழ்த் திரைப்படம் இன்று வெளியீடு</a>
+              <span style="font-size: 12px; color: #4B5563;">2 மணி நேரத்துக்கு முன்</span>
+            </div>
+          </li>
+        
+      </ol>
+      <a href="#" style="display: flex; align-items: center; justify-content: center; min-height: 44px; margin-top: 14px; border: 1.5px solid #1F2937; font-weight: 600; font-size: 14px;">அனைத்துச் செய்திகளும்</a>
+    </aside>
+  </section>
+
+  <section style="max-width: 1320px; margin: 0 auto; padding: 0 24px 40px;">
+    <div style="display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-top: 12px; border-top: 3px solid #1F2937; margin-bottom: 20px;">
+      <h2 style="margin: 0; font-family: 'Noto Serif Tamil', 'Noto Serif', Georgia, serif; font-weight: 700; font-size: 24px;"><span aria-hidden="true" style="display: inline-block; width: 12px; height: 12px; margin-right: 14px; vertical-align: middle; border-radius: 0 100% 0 100%; background: #E11D2E; transform: rotate(45deg);"></span>மேலும் முக்கியச் செய்திகள்</h2>
+      <div style="display: flex; gap: 8px;">
+        <button type="button" aria-label="முந்தைய செய்திகள்" style="width: 44px; height: 44px; border-radius: 999px; border: 1px solid #D1D5DB; background: #FFFFFF; color: #1F2937; display: flex; align-items: center; justify-content: center; cursor: pointer;" data-action="prev"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"></path></svg></button>
+        <button type="button" aria-label="அடுத்த செய்திகள்" style="width: 44px; height: 44px; border-radius: 999px; border: 0; background: #1F2937; color: #FFFFFF; display: flex; align-items: center; justify-content: center; cursor: pointer;" data-action="next"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"></path></svg></button>
+      </div>
+    </div>
+    <div style="overflow: hidden;" data-carousel-viewport="">
+      <div style="display: flex; gap: 28px; transition: transform .7s ease; transform: translateX(calc(0 * (100% + 28px) / 4));" data-carousel-track="">
+        
+          <article style="display: flex; flex-direction: column; gap: 10px; padding-top: 12px; border-top: 4px solid #16A34A; flex: 0 0 calc((100% - 84px) / 4); min-width: 0;">
+            
+            <a href="#" style="display: flex; align-items: center; justify-content: center; aspect-ratio: 16 / 9; background: #E5E7EB; color: #4B5563; font-size: 13px;">[படம்]</a>
+            <span style="font-size: 12px; font-weight: 700; letter-spacing: 1px; color: #15803D;">விளையாட்டு</span>
+            <h3 style="margin: 0; font-family: 'Noto Serif Tamil', 'Noto Serif', Georgia, serif; font-weight: 700; font-size: 18px; line-height: 1.55;"><a href="#">யாழ். மாவட்ட உதைபந்தாட்டத் தொடரின் இறுதிப் போட்டி இன்று</a></h3>
+            <span style="font-size: 12px; color: #4B5563;">3 மணி நேரத்துக்கு முன்</span>
+          </article>
+        
+          <article style="display: flex; flex-direction: column; gap: 10px; padding-top: 12px; border-top: 4px solid #FACC15; flex: 0 0 calc((100% - 84px) / 4); min-width: 0;">
+            <a href="#" style="display: block; aspect-ratio: 16 / 9; overflow: hidden; background: #E5E7EB;"><img src="assets/photos/technology.jpg" alt="" style="display: block; width: 100%; height: 100%; object-fit: cover;"></a>
+            
+            <span style="font-size: 12px; font-weight: 700; letter-spacing: 1px; color: #A16207;">தொழில்நுட்பம்</span>
+            <h3 style="margin: 0; font-family: 'Noto Serif Tamil', 'Noto Serif', Georgia, serif; font-weight: 700; font-size: 18px; line-height: 1.55;"><a href="#">தெற்காசியாவில் செயற்கை நுண்ணறிவு: இலங்கைக்கான வாய்ப்புகள்</a></h3>
+            <span style="font-size: 12px; color: #4B5563;">4 மணி நேரத்துக்கு முன்</span>
+          </article>
+        
+          <article style="display: flex; flex-direction: column; gap: 10px; padding-top: 12px; border-top: 4px solid #E11D2E; flex: 0 0 calc((100% - 84px) / 4); min-width: 0;">
+            
+            <a href="#" style="display: flex; align-items: center; justify-content: center; aspect-ratio: 16 / 9; background: #E5E7EB; color: #4B5563; font-size: 13px;">[படம்]</a>
+            <span style="font-size: 12px; font-weight: 700; letter-spacing: 1px; color: #B91C1C;">சினிமா</span>
+            <h3 style="margin: 0; font-family: 'Noto Serif Tamil', 'Noto Serif', Georgia, serif; font-weight: 700; font-size: 18px; line-height: 1.55;"><a href="#">புதிய தமிழ்த் திரைப்படம் இன்று திரையரங்குகளில் வெளியீடு</a></h3>
+            <span style="font-size: 12px; color: #4B5563;">5 மணி நேரத்துக்கு முன்</span>
+          </article>
+        
+          <article style="display: flex; flex-direction: column; gap: 10px; padding-top: 12px; border-top: 4px solid #1F2937; flex: 0 0 calc((100% - 84px) / 4); min-width: 0;">
+            
+            <a href="#" style="display: flex; align-items: center; justify-content: center; aspect-ratio: 16 / 9; background: #E5E7EB; color: #4B5563; font-size: 13px;">[படம்]</a>
+            <span style="font-size: 12px; font-weight: 700; letter-spacing: 1px; color: #374151;">அரசியல்</span>
+            <h3 style="margin: 0; font-family: 'Noto Serif Tamil', 'Noto Serif', Georgia, serif; font-weight: 700; font-size: 18px; line-height: 1.55;"><a href="#">வட மாகாண சபை அமர்வு இன்று கூடுகிறது</a></h3>
+            <span style="font-size: 12px; color: #4B5563;">6 மணி நேரத்துக்கு முன்</span>
+          </article>
+        
+          <article style="display: flex; flex-direction: column; gap: 10px; padding-top: 12px; border-top: 4px solid #F97316; flex: 0 0 calc((100% - 84px) / 4); min-width: 0;">
+            
+            <a href="#" style="display: flex; align-items: center; justify-content: center; aspect-ratio: 16 / 9; background: #E5E7EB; color: #4B5563; font-size: 13px;">[படம்]</a>
+            <span style="font-size: 12px; font-weight: 700; letter-spacing: 1px; color: #C2410C;">வணிகம்</span>
+            <h3 style="margin: 0; font-family: 'Noto Serif Tamil', 'Noto Serif', Georgia, serif; font-weight: 700; font-size: 18px; line-height: 1.55;"><a href="#">இலங்கை ரூபாவின் பெறுமதியில் சிறிய உயர்வு</a></h3>
+            <span style="font-size: 12px; color: #4B5563;">7 மணி நேரத்துக்கு முன்</span>
+          </article>
+        
+          <article style="display: flex; flex-direction: column; gap: 10px; padding-top: 12px; border-top: 4px solid #F97316; flex: 0 0 calc((100% - 84px) / 4); min-width: 0;">
+            
+            <a href="#" style="display: flex; align-items: center; justify-content: center; aspect-ratio: 16 / 9; background: #E5E7EB; color: #4B5563; font-size: 13px;">[படம்]</a>
+            <span style="font-size: 12px; font-weight: 700; letter-spacing: 1px; color: #C2410C;">உலகம்</span>
+            <h3 style="margin: 0; font-family: 'Noto Serif Tamil', 'Noto Serif', Georgia, serif; font-weight: 700; font-size: 18px; line-height: 1.55;"><a href="#">காலநிலை மாற்றம் தொடர்பான சர்வதேச மாநாடு இன்று ஆரம்பம்</a></h3>
+            <span style="font-size: 12px; color: #4B5563;">8 மணி நேரத்துக்கு முன்</span>
+          </article>
+        
+          <article style="display: flex; flex-direction: column; gap: 10px; padding-top: 12px; border-top: 4px solid #E11D2E; flex: 0 0 calc((100% - 84px) / 4); min-width: 0;">
+            
+            <a href="#" style="display: flex; align-items: center; justify-content: center; aspect-ratio: 16 / 9; background: #E5E7EB; color: #4B5563; font-size: 13px;">[படம்]</a>
+            <span style="font-size: 12px; font-weight: 700; letter-spacing: 1px; color: #B91C1C;">இலங்கை</span>
+            <h3 style="margin: 0; font-family: 'Noto Serif Tamil', 'Noto Serif', Georgia, serif; font-weight: 700; font-size: 18px; line-height: 1.55;"><a href="#">யாழ்ப்பாணத்தில் புதிய பொது நூலக வளாகம் திறப்பு</a></h3>
+            <span style="font-size: 12px; color: #4B5563;">9 மணி நேரத்துக்கு முன்</span>
+          </article>
+        
+          <article style="display: flex; flex-direction: column; gap: 10px; padding-top: 12px; border-top: 4px solid #16A34A; flex: 0 0 calc((100% - 84px) / 4); min-width: 0;">
+            
+            <a href="#" style="display: flex; align-items: center; justify-content: center; aspect-ratio: 16 / 9; background: #E5E7EB; color: #4B5563; font-size: 13px;">[படம்]</a>
+            <span style="font-size: 12px; font-weight: 700; letter-spacing: 1px; color: #15803D;">விளையாட்டு</span>
+            <h3 style="margin: 0; font-family: 'Noto Serif Tamil', 'Noto Serif', Georgia, serif; font-weight: 700; font-size: 18px; line-height: 1.55;"><a href="#">இலங்கை கிரிக்கெட் அணி அறிவிப்பு</a></h3>
+            <span style="font-size: 12px; color: #4B5563;">10 மணி நேரத்துக்கு முன்</span>
+          </article>
+        
+      </div>
+    </div>
+    <div style="display: flex; justify-content: center; gap: 2px; margin-top: 16px;">
+      
+        <button type="button" aria-label="செய்திக் குழு 1" style="width: 32px; height: 32px; border: 0; background: none; display: flex; align-items: center; justify-content: center; cursor: pointer;" data-action="go" data-index="0"><span style="display: block; width: 24px; height: 8px; border-radius: 999px; background: #E11D2E;"></span></button>
+      
+        <button type="button" aria-label="செய்திக் குழு 2" style="width: 32px; height: 32px; border: 0; background: none; display: flex; align-items: center; justify-content: center; cursor: pointer;" data-action="go" data-index="1"><span style="display: block; width: 8px; height: 8px; border-radius: 999px; background: #D1D5DB;"></span></button>
+      
+        <button type="button" aria-label="செய்திக் குழு 3" style="width: 32px; height: 32px; border: 0; background: none; display: flex; align-items: center; justify-content: center; cursor: pointer;" data-action="go" data-index="2"><span style="display: block; width: 8px; height: 8px; border-radius: 999px; background: #D1D5DB;"></span></button>
+      
+        <button type="button" aria-label="செய்திக் குழு 4" style="width: 32px; height: 32px; border: 0; background: none; display: flex; align-items: center; justify-content: center; cursor: pointer;" data-action="go" data-index="3"><span style="display: block; width: 8px; height: 8px; border-radius: 999px; background: #D1D5DB;"></span></button>
+      
+        <button type="button" aria-label="செய்திக் குழு 5" style="width: 32px; height: 32px; border: 0; background: none; display: flex; align-items: center; justify-content: center; cursor: pointer;" data-action="go" data-index="4"><span style="display: block; width: 8px; height: 8px; border-radius: 999px; background: #D1D5DB;"></span></button>
+      
+    </div>
+  </section>
+
+
+  <section style="background: #1F2937; color: #F9FAFB;">
+    <div style="max-width: 1320px; margin: 0 auto; padding: 64px 24px 72px;">
+      <div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 16px; margin-bottom: 32px;">
+        <div style="display: flex; flex-direction: column; gap: 12px;">
+          <div aria-hidden="true" style="display: flex; height: 4px; width: 72px;"><span style="flex: 6; background: #E11D2E;"></span><span style="flex: 3; background: #F97316;"></span><span style="flex: 2; background: #FACC15;"></span><span style="flex: 1; background: #16A34A;"></span></div>
+          <h2 style="margin: 0; font-family: 'Noto Serif Tamil', 'Noto Serif', Georgia, serif; font-weight: 700; font-size: 40px; line-height: 1.25; color: #FFFFFF;">காணொளிகள்</h2>
+        </div>
+        <a href="#" style="display: flex; align-items: center; gap: 10px; min-height: 44px; padding: 0 22px; border: 1px solid rgba(255,255,255,.4); border-radius: 999px; color: #FFFFFF; font-weight: 600; font-size: 14px;">அனைத்துக் காணொளிகளும்<svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; gap: 40px;">
+        <article style="flex: 7 1 560px; min-width: 0;">
+          <a href="#" aria-label="காணொளியை இயக்கு: யாழ். நகரின் புதிய முகம்" style="position: relative; display: block; aspect-ratio: 16 / 9; overflow: hidden; background: linear-gradient(135deg, #374151, #1F2937);">
+            <img src="assets/photos/town-rain.jpg" alt="" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block;">
+            <span style="position: absolute; left: 50%; top: 40%; transform: translate(-50%, -50%); width: 92px; height: 92px; border-radius: 999px; border: 2px solid rgba(255,255,255,.8); background: rgba(255,255,255,.12); display: flex; align-items: center; justify-content: center;"><svg aria-hidden="true" width="34" height="34" viewBox="0 0 24 24" fill="#FFFFFF"><path d="M8 5v14l11-7z"></path></svg></span>
+            <span style="position: absolute; left: 0; right: 0; bottom: 0; padding: 96px 28px 28px; background: linear-gradient(to top, rgba(31,41,55,.96), rgba(31,41,55,0)); display: flex; flex-direction: column; gap: 12px;">
+              <span style="display: flex; align-items: center; gap: 14px;">
+                <span style="background: #E11D2E; color: #FFFFFF; font-size: 12px; font-weight: 700; letter-spacing: 1px; padding: 4px 10px;">இலங்கை</span>
+                <span style="display: flex; align-items: center; gap: 6px; font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 13px; color: #E5E7EB;"><svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"></path></svg>06:24</span>
+              </span>
+              <span style="font-family: 'Noto Serif Tamil', 'Noto Serif', Georgia, serif; font-weight: 700; font-size: 32px; line-height: 1.45; color: #FFFFFF;">யாழ். நகரின் புதிய முகம்: ஒரு பயணம்</span>
+            </span>
+          </a>
+        </article>
+        <div style="flex: 4 1 340px; min-width: 0; display: flex; flex-direction: column;">
+          <h3 style="margin: 0 0 4px; font-size: 13px; font-weight: 700; letter-spacing: 2px; color: #FACC15;">அடுத்து</h3>
+          
+            <a href="#" style="display: flex; gap: 16px; align-items: flex-start; padding: 16px 0; border-bottom: 1px solid rgba(255,255,255,.14); color: #FFFFFF;">
+              <span style="position: relative; flex: 0 0 152px; aspect-ratio: 16 / 9; background: linear-gradient(135deg, #374151, #1F2937); display: flex; align-items: center; justify-content: center;">
+                <span style="width: 36px; height: 36px; border-radius: 999px; border: 1.5px solid rgba(255,255,255,.75); background: rgba(255,255,255,.12); display: flex; align-items: center; justify-content: center;"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="#FFFFFF"><path d="M8 5v14l11-7z"></path></svg></span>
+                <span style="position: absolute; right: 6px; bottom: 6px; background: rgba(0,0,0,.8); color: #FFFFFF; font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 11px; padding: 2px 6px;">04:12</span>
+              </span>
+              <span style="display: flex; flex-direction: column; gap: 6px;">
+                <span style="font-size: 12px; font-weight: 700; letter-spacing: 1px; color: #FACC15;">இலங்கை</span>
+                <span style="font-family: 'Noto Serif Tamil', 'Noto Serif', Georgia, serif; font-weight: 700; font-size: 16px; line-height: 1.6;">அறுவடைக் காலத்தில் வன்னி விவசாயிகள்</span>
+              </span>
+            </a>
+          
+            <a href="#" style="display: flex; gap: 16px; align-items: flex-start; padding: 16px 0; border-bottom: 1px solid rgba(255,255,255,.14); color: #FFFFFF;">
+              <span style="position: relative; flex: 0 0 152px; aspect-ratio: 16 / 9; background: linear-gradient(135deg, #374151, #1F2937); display: flex; align-items: center; justify-content: center;">
+                <span style="width: 36px; height: 36px; border-radius: 999px; border: 1.5px solid rgba(255,255,255,.75); background: rgba(255,255,255,.12); display: flex; align-items: center; justify-content: center;"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="#FFFFFF"><path d="M8 5v14l11-7z"></path></svg></span>
+                <span style="position: absolute; right: 6px; bottom: 6px; background: rgba(0,0,0,.8); color: #FFFFFF; font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 11px; padding: 2px 6px;">12:30</span>
+              </span>
+              <span style="display: flex; flex-direction: column; gap: 6px;">
+                <span style="font-size: 12px; font-weight: 700; letter-spacing: 1px; color: #FACC15;">செய்திச் சுருக்கம்</span>
+                <span style="font-family: 'Noto Serif Tamil', 'Noto Serif', Georgia, serif; font-weight: 700; font-size: 16px; line-height: 1.6;">வாராந்தச் செய்திச் சுருக்கம்</span>
+              </span>
+            </a>
+          
+            <a href="#" style="display: flex; gap: 16px; align-items: flex-start; padding: 16px 0; border-bottom: 1px solid rgba(255,255,255,.14); color: #FFFFFF;">
+              <span style="position: relative; flex: 0 0 152px; aspect-ratio: 16 / 9; background: linear-gradient(135deg, #374151, #1F2937); display: flex; align-items: center; justify-content: center;">
+                <span style="width: 36px; height: 36px; border-radius: 999px; border: 1.5px solid rgba(255,255,255,.75); background: rgba(255,255,255,.12); display: flex; align-items: center; justify-content: center;"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="#FFFFFF"><path d="M8 5v14l11-7z"></path></svg></span>
+                <span style="position: absolute; right: 6px; bottom: 6px; background: rgba(0,0,0,.8); color: #FFFFFF; font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 11px; padding: 2px 6px;">08:05</span>
+              </span>
+              <span style="display: flex; flex-direction: column; gap: 6px;">
+                <span style="font-size: 12px; font-weight: 700; letter-spacing: 1px; color: #FACC15;">கலாசாரம்</span>
+                <span style="font-family: 'Noto Serif Tamil', 'Noto Serif', Georgia, serif; font-weight: 700; font-size: 16px; line-height: 1.6;">நல்லூர்த் திருவிழாவின் சிறப்புக் காட்சிகள்</span>
+              </span>
+            </a>
+          
+            <a href="#" style="display: flex; gap: 16px; align-items: flex-start; padding: 16px 0; border-bottom: 1px solid rgba(255,255,255,.14); color: #FFFFFF;">
+              <span style="position: relative; flex: 0 0 152px; aspect-ratio: 16 / 9; background: linear-gradient(135deg, #374151, #1F2937); display: flex; align-items: center; justify-content: center;">
+                <span style="width: 36px; height: 36px; border-radius: 999px; border: 1.5px solid rgba(255,255,255,.75); background: rgba(255,255,255,.12); display: flex; align-items: center; justify-content: center;"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="#FFFFFF"><path d="M8 5v14l11-7z"></path></svg></span>
+                <span style="position: absolute; right: 6px; bottom: 6px; background: rgba(0,0,0,.8); color: #FFFFFF; font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 11px; padding: 2px 6px;">05:40</span>
+              </span>
+              <span style="display: flex; flex-direction: column; gap: 6px;">
+                <span style="font-size: 12px; font-weight: 700; letter-spacing: 1px; color: #FACC15;">கல்வி</span>
+                <span style="font-family: 'Noto Serif Tamil', 'Noto Serif', Georgia, serif; font-weight: 700; font-size: 16px; line-height: 1.6;">மாணவர்களின் அறிவியல் கண்காட்சி</span>
+              </span>
+            </a>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="max-width: 1320px; margin: 0 auto; padding: 48px 24px 40px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px;">
+    <div style="display: flex; flex-direction: column; gap: 12px; padding-top: 12px; border-top: 4px solid #E11D2E;">
+      <div style="display: flex; align-items: baseline; justify-content: space-between;"><h2 style="margin: 0; font-family: 'Noto Serif Tamil', 'Noto Serif', Georgia, serif; font-weight: 700; font-size: 24px;"><span aria-hidden="true" style="display: inline-block; width: 12px; height: 12px; margin-right: 12px; vertical-align: middle; border-radius: 0 100% 0 100%; background: #E11D2E; transform: rotate(45deg);"></span>இலங்கை</h2><a href="category-ta.html" style="font-size: 13px; font-weight: 600; color: #B91C1C;">மேலும்</a></div>
+      <a href="#" style="display: block; aspect-ratio: 16 / 9; overflow: hidden; background: #E5E7EB;"><img src="assets/photos/beach-cleanup.jpg" alt="கடற்கரைச் சுத்திகரிப்புத் திட்டத்தில் பங்கேற்ற தன்னார்வலர்கள்" style="display: block; width: 100%; height: 100%; object-fit: cover;"></a>
+      <h3 style="margin: 0; font-family: 'Noto Serif Tamil', 'Noto Serif', Georgia, serif; font-weight: 700; font-size: 19px; line-height: 1.55;"><a href="#">கடல் சூழலைப் பாதுகாக்கக் கடற்கரைச் சுத்திகரிப்புத் திட்டம்</a></h3>
+      <span style="font-size: 12px; color: #4B5563;">3 மணி நேரத்துக்கு முன்</span>
+      <ul style="list-style: none; margin: 10px 0 0; padding: 0;">
+        <li style="display: flex; gap: 14px; align-items: flex-start; padding: 14px 0; border-top: 1px solid #E5E7EB;"><span aria-hidden="true" style="flex: 0 0 104px; height: 68px; background: #E5E7EB;"></span><a href="#" style="font-family: 'Noto Serif Tamil', 'Noto Serif', Georgia, serif; font-weight: 700; font-size: 15px; line-height: 1.6;">மட்டக்களப்பில் மீனவர்களுக்கான புதிய துறைமுக வசதிகள்<span style="display: block; margin-top: 4px; font-family: 'Noto Sans Tamil', sans-serif; font-weight: 400; font-size: 12px; color: #4B5563;">6 மணி நேரத்துக்கு முன்</span></a></li>
+        <li style="display: flex; gap: 14px; align-items: flex-start; padding: 14px 0; border-top: 1px solid #E5E7EB;"><span aria-hidden="true" style="flex: 0 0 104px; height: 68px; background: #E5E7EB;"></span><a href="#" style="font-family: 'Noto Serif Tamil', 'Noto Serif', Georgia, serif; font-weight: 700; font-size: 15px; line-height: 1.6;">திருகோணமலைக் கடற்கரைக்குச் சுற்றுலாப் பயணிகளின் வருகை அதிகரிப்பு<span style="display: block; margin-top: 4px; font-family: 'Noto Sans Tamil', sans-serif; font-weight: 400; font-size: 12px; color: #4B5563;">8 மணி நேரத்துக்கு முன்</span></a></li>
+        <li style="display: flex; gap: 14px; align-items: flex-start; padding: 14px 0; border-top: 1px solid #E5E7EB;"><span aria-hidden="true" style="flex: 0 0 104px; height: 68px; background: #E5E7EB;"></span><a href="#" style="font-family: 'Noto Serif Tamil', 'Noto Serif', Georgia, serif; font-weight: 700; font-size: 15px; line-height: 1.6;">மலையகத் தோட்டத் தொழிலாளர்களுக்குப் புதிய வீட்டுத் திட்டம்<span style="display: block; margin-top: 4px; font-family: 'Noto Sans Tamil', sans-serif; font-weight: 400; font-size: 12px; color: #4B5563;">நேற்று, 18:30</span></a></li>
+      </ul>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 12px; padding-top: 12px; border-top: 4px solid #F97316;">
+      <div style="display: flex; align-items: baseline; justify-content: space-between;"><h2 style="margin: 0; font-family: 'Noto Serif Tamil', 'Noto Serif', Georgia, serif; font-weight: 700; font-size: 24px;"><span aria-hidden="true" style="display: inline-block; width: 12px; height: 12px; margin-right: 12px; vertical-align: middle; border-radius: 0 100% 0 100%; background: #F97316; transform: rotate(45deg);"></span>உலகம்</h2><a href="#" style="font-size: 13px; font-weight: 600; color: #C2410C;">மேலும்</a></div>
+      <a href="#" style="display: flex; align-items: center; justify-content: center; aspect-ratio: 16 / 9; background: #E5E7EB; color: #4B5563; font-size: 13px;">[படம்]</a>
+      <h3 style="margin: 0; font-family: 'Noto Serif Tamil', 'Noto Serif', Georgia, serif; font-weight: 700; font-size: 19px; line-height: 1.55;"><a href="#">ஆசிய நாடுகளுக்கிடையிலான வர்த்தக மாநாடு சிங்கப்பூரில் ஆரம்பம்</a></h3>
+      <span style="font-size: 12px; color: #4B5563;">5 மணி நேரத்துக்கு முன்</span>
+      <ul style="list-style: none; margin: 10px 0 0; padding: 0;">
+        <li style="display: flex; gap: 14px; align-items: flex-start; padding: 14px 0; border-top: 1px solid #E5E7EB;"><span aria-hidden="true" style="flex: 0 0 104px; height: 68px; background: #E5E7EB;"></span><a href="#" style="font-family: 'Noto Serif Tamil', 'Noto Serif', Georgia, serif; font-weight: 700; font-size: 15px; line-height: 1.6;">ஐ.நா. பொதுச் சபையில் காலநிலை நிதி குறித்துக் கலந்துரையாடல்<span style="display: block; margin-top: 4px; font-family: 'Noto Sans Tamil', sans-serif; font-weight: 400; font-size: 12px; color: #4B5563;">7 மணி நேரத்துக்கு முன்</span></a></li>
+        <li style="display: flex; gap: 14px; align-items: flex-start; padding: 14px 0; border-top: 1px solid #E5E7EB;"><span aria-hidden="true" style="flex: 0 0 104px; height: 68px; background: #E5E7EB;"></span><a href="#" style="font-family: 'Noto Serif Tamil', 'Noto Serif', Georgia, serif; font-weight: 700; font-size: 15px; line-height: 1.6;">இந்தியாவில் புதிய அதிவேக ரயில் சேவை அறிமுகம்<span style="display: block; margin-top: 4px; font-family: 'Noto Sans Tamil', sans-serif; font-weight: 400; font-size: 12px; color: #4B5563;">9 மணி நேரத்துக்கு முன்</span></a></li>
+        <li style="display: flex; gap: 14px; align-items: flex-start; padding: 14px 0; border-top: 1px solid #E5E7EB;"><span aria-hidden="true" style="flex: 0 0 104px; height: 68px; background: #E5E7EB;"></span><a href="#" style="font-family: 'Noto Serif Tamil', 'Noto Serif', Georgia, serif; font-weight: 700; font-size: 15px; line-height: 1.6;">ஆபிரிக்காவில் சூரிய மின்சக்தித் திட்டங்கள் விரிவாக்கம்<span style="display: block; margin-top: 4px; font-family: 'Noto Sans Tamil', sans-serif; font-weight: 400; font-size: 12px; color: #4B5563;">நேற்று, 21:15</span></a></li>
+      </ul>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 12px; padding-top: 12px; border-top: 4px solid #16A34A;">
+      <div style="display: flex; align-items: baseline; justify-content: space-between;"><h2 style="margin: 0; font-family: 'Noto Serif Tamil', 'Noto Serif', Georgia, serif; font-weight: 700; font-size: 24px;"><span aria-hidden="true" style="display: inline-block; width: 12px; height: 12px; margin-right: 12px; vertical-align: middle; border-radius: 0 100% 0 100%; background: #16A34A; transform: rotate(45deg);"></span>வணிகம்</h2><a href="#" style="font-size: 13px; font-weight: 600; color: #15803D;">மேலும்</a></div>
+      <a href="#" style="display: flex; align-items: center; justify-content: center; aspect-ratio: 16 / 9; background: #E5E7EB; color: #4B5563; font-size: 13px;">[படம்]</a>
+      <h3 style="margin: 0; font-family: 'Noto Serif Tamil', 'Noto Serif', Georgia, serif; font-weight: 700; font-size: 19px; line-height: 1.55;"><a href="#">கொழும்பு பங்குச் சந்தை இன்று உயர்வுடன் ஆரம்பம்</a></h3>
+      <span style="font-size: 12px; color: #4B5563;">45 நிமிடங்களுக்கு முன்</span>
+      <ul style="list-style: none; margin: 10px 0 0; padding: 0;">
+        <li style="display: flex; gap: 14px; align-items: flex-start; padding: 14px 0; border-top: 1px solid #E5E7EB;"><span aria-hidden="true" style="flex: 0 0 104px; height: 68px; background: #E5E7EB;"></span><a href="#" style="font-family: 'Noto Serif Tamil', 'Noto Serif', Georgia, serif; font-weight: 700; font-size: 15px; line-height: 1.6;">சுற்றுலாத் துறை வருமானம் அதிகரிப்பு<span style="display: block; margin-top: 4px; font-family: 'Noto Sans Tamil', sans-serif; font-weight: 400; font-size: 12px; color: #4B5563;">4 மணி நேரத்துக்கு முன்</span></a></li>
+        <li style="display: flex; gap: 14px; align-items: flex-start; padding: 14px 0; border-top: 1px solid #E5E7EB;"><span aria-hidden="true" style="flex: 0 0 104px; height: 68px; background: #E5E7EB;"></span><a href="#" style="font-family: 'Noto Serif Tamil', 'Noto Serif', Georgia, serif; font-weight: 700; font-size: 15px; line-height: 1.6;">சிறு தொழில் முயற்சியாளர்களுக்குப் புதிய கடன் திட்டம்<span style="display: block; margin-top: 4px; font-family: 'Noto Sans Tamil', sans-serif; font-weight: 400; font-size: 12px; color: #4B5563;">10 மணி நேரத்துக்கு முன்</span></a></li>
+        <li style="display: flex; gap: 14px; align-items: flex-start; padding: 14px 0; border-top: 1px solid #E5E7EB;"><span aria-hidden="true" style="flex: 0 0 104px; height: 68px; background: #E5E7EB;"></span><a href="#" style="font-family: 'Noto Serif Tamil', 'Noto Serif', Georgia, serif; font-weight: 700; font-size: 15px; line-height: 1.6;">தேங்காய் விலையில் மாற்றம்<span style="display: block; margin-top: 4px; font-family: 'Noto Sans Tamil', sans-serif; font-weight: 400; font-size: 12px; color: #4B5563;">24 ஒக்டோபர் 2026</span></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section style="max-width: 1320px; margin: 0 auto; padding: 8px 24px 48px;">
+    <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 16px; padding-top: 12px; border-top: 3px solid #1F2937; margin-bottom: 20px;">
+      <h2 style="margin: 0; font-family: 'Noto Serif Tamil', 'Noto Serif', Georgia, serif; font-weight: 700; font-size: 24px;"><span aria-hidden="true" style="display: inline-block; width: 12px; height: 12px; margin-right: 14px; vertical-align: middle; border-radius: 0 100% 0 100%; background: #F97316; transform: rotate(45deg);"></span>படங்களில்</h2>
+      <a href="#" style="font-weight: 600; font-size: 14px; color: #B91C1C;">அனைத்துப் படத் தொகுப்புகளும்</a>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px;">
+      
+        <a href="#" style="position: relative; display: block; aspect-ratio: 4 / 5; background: #D1D5DB;">
+          <span style="position: absolute; left: 0; right: 0; bottom: 0; padding: 40px 16px 16px; background: linear-gradient(to top, rgba(31,41,55,.92), rgba(31,41,55,0)); color: #FFFFFF; display: flex; flex-direction: column; gap: 2px;">
+            <span style="font-family: 'Noto Serif Tamil', 'Noto Serif', Georgia, serif; font-weight: 700; font-size: 17px; line-height: 1.45;">நல்லூர்த் திருவிழா</span>
+            <span style="font-size: 12px; color: #E5E7EB;">24 படங்கள்</span>
+          </span>
+        </a>
+      
+        <a href="#" style="position: relative; display: block; aspect-ratio: 4 / 5; background: #D1D5DB;">
+          <span style="position: absolute; left: 0; right: 0; bottom: 0; padding: 40px 16px 16px; background: linear-gradient(to top, rgba(31,41,55,.92), rgba(31,41,55,0)); color: #FFFFFF; display: flex; flex-direction: column; gap: 2px;">
+            <span style="font-family: 'Noto Serif Tamil', 'Noto Serif', Georgia, serif; font-weight: 700; font-size: 17px; line-height: 1.45;">வன்னியில் அறுவடை</span>
+            <span style="font-size: 12px; color: #E5E7EB;">18 படங்கள்</span>
+          </span>
+        </a>
+      
+        <a href="#" style="position: relative; display: block; aspect-ratio: 4 / 5; background: #D1D5DB;">
+          <span style="position: absolute; left: 0; right: 0; bottom: 0; padding: 40px 16px 16px; background: linear-gradient(to top, rgba(31,41,55,.92), rgba(31,41,55,0)); color: #FFFFFF; display: flex; flex-direction: column; gap: 2px;">
+            <span style="font-family: 'Noto Serif Tamil', 'Noto Serif', Georgia, serif; font-weight: 700; font-size: 17px; line-height: 1.45;">யாழ். நூலகத் திறப்பு விழா</span>
+            <span style="font-size: 12px; color: #E5E7EB;">12 படங்கள்</span>
+          </span>
+        </a>
+      
+        <a href="#" style="position: relative; display: block; aspect-ratio: 4 / 5; background: #D1D5DB;">
+          <span style="position: absolute; left: 0; right: 0; bottom: 0; padding: 40px 16px 16px; background: linear-gradient(to top, rgba(31,41,55,.92), rgba(31,41,55,0)); color: #FFFFFF; display: flex; flex-direction: column; gap: 2px;">
+            <span style="font-family: 'Noto Serif Tamil', 'Noto Serif', Georgia, serif; font-weight: 700; font-size: 17px; line-height: 1.45;">திருகோணமலைக் கடற்கரை</span>
+            <span style="font-size: 12px; color: #E5E7EB;">15 படங்கள்</span>
+          </span>
+        </a>
+      
+    </div>
+  </section>
+
+  <section style="max-width: 1320px; margin: 0 auto; padding: 0 24px 64px; display: flex; flex-wrap: wrap; gap: 40px;">
+    <div style="flex: 2 1 520px; min-width: 0; padding-top: 12px; border-top: 3px solid #1F2937;">
+      <div role="tablist" aria-label="அதிகம் வாசிக்கப்பட்டவை, பிரபலமானவை" style="display: flex; gap: 24px; margin-bottom: 8px;">
+        <button type="button" role="tab" aria-selected="true" style="border: 0; background: none; padding: 0 0 6px; border-bottom: 3px solid #E11D2E; font-family: 'Noto Serif Tamil', 'Noto Serif', Georgia, serif; font-weight: 700; font-size: 24px; color: #1F2937; cursor: pointer;">அதிகம் வாசிக்கப்பட்டவை</button>
+        <button type="button" role="tab" aria-selected="false" style="border: 0; background: none; padding: 0 0 6px; border-bottom: 3px solid transparent; font-family: 'Noto Serif Tamil', 'Noto Serif', Georgia, serif; font-weight: 600; font-size: 20px; color: #4B5563; cursor: pointer;">பிரபலமானவை</button>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 28px; margin-top: 16px;">
+        <a href="article-ta.html" style="position: relative; display: flex; flex-direction: column; justify-content: flex-end; min-height: 480px; overflow: hidden; background: #1F2937; color: #FFFFFF;">
+          <img src="assets/photos/reservoir-spill-gates.jpg" alt="" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block;">
+          <span aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(31,41,55,.96) 0%, rgba(31,41,55,.6) 45%, rgba(31,41,55,0) 75%);"></span>
+          <span aria-hidden="true" style="position: absolute; top: 0; left: 0; width: 64px; height: 64px; display: flex; align-items: center; justify-content: center; background: #E11D2E; border-radius: 0 0 28px 0; font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 32px; line-height: 1; color: #FFFFFF;">1</span>
+          <span style="position: relative; display: flex; flex-direction: column; gap: 10px; padding: 28px 24px 24px;">
+            <span aria-hidden="true" style="display: flex; height: 4px; width: 72px;"><span style="flex: 6; background: #E11D2E;"></span><span style="flex: 3; background: #F97316;"></span><span style="flex: 2; background: #FACC15;"></span><span style="flex: 1; background: #16A34A;"></span></span>
+            <span style="font-size: 13px; font-weight: 700; letter-spacing: 1px; color: #FACC15;">இலங்கை · வானிலை</span>
+            <span style="font-family: 'Noto Serif Tamil', 'Noto Serif', Georgia, serif; font-weight: 700; font-size: 24px; line-height: 1.45;">கனமழை காரணமாக நீர்த்தேக்கங்களின் வான்கதவுகள் திறப்பு</span>
+            <span style="display: flex; align-items: center; gap: 14px; font-size: 13px; color: #D1D5DB;"><span style="display: flex; align-items: center; gap: 6px;"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"></path><circle cx="12" cy="12" r="3"></circle></svg>24.8K வாசிப்புகள்</span><span>2 மணி நேரத்துக்கு முன்</span></span>
+          </span>
+        </a>
+        <ol start="2" style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column;">
+          
+            <li style="display: flex; align-items: center; gap: 16px; padding: 14px 0; border-bottom: 1px solid #E5E7EB;">
+              <span aria-hidden="true" style="flex: 0 0 48px; font-family: Poppins, sans-serif; font-weight: 700; font-size: 46px; line-height: 1; color: transparent; -webkit-text-stroke: 1.5px #F97316;">2</span>
+              <span style="flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; gap: 4px;">
+                <span style="font-size: 12px; font-weight: 700; letter-spacing: 0.8px; color: #C2410C;">வானிலை</span>
+                <a href="#" style="font-family: 'Noto Serif Tamil', 'Noto Serif', Georgia, serif; font-weight: 700; font-size: 16px; line-height: 1.45; color: #1F2937;">கிழக்கு மாகாணத்தில் வெள்ள எச்சரிக்கை</a>
+                <span style="display: flex; align-items: center; gap: 6px; font-size: 12px; color: #6B7280;"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"></path><circle cx="12" cy="12" r="3"></circle></svg>18.2K வாசிப்புகள்</span>
+              </span>
+              <span aria-hidden="true" style="flex: 0 0 96px; height: 68px; overflow: hidden; background: #E5E7EB;"><img src="assets/photos/town-rain.jpg" alt="" style="display: block; width: 100%; height: 100%; object-fit: cover;"></span>
+            </li>
+          
+            <li style="display: flex; align-items: center; gap: 16px; padding: 14px 0; border-bottom: 1px solid #E5E7EB;">
+              <span aria-hidden="true" style="flex: 0 0 48px; font-family: Poppins, sans-serif; font-weight: 700; font-size: 46px; line-height: 1; color: transparent; -webkit-text-stroke: 1.5px #FACC15;">3</span>
+              <span style="flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; gap: 4px;">
+                <span style="font-size: 12px; font-weight: 700; letter-spacing: 0.8px; color: #A16207;">வணிகம்</span>
+                <a href="#" style="font-family: 'Noto Serif Tamil', 'Noto Serif', Georgia, serif; font-weight: 700; font-size: 16px; line-height: 1.45; color: #1F2937;">தேயிலை ஏற்றுமதிக்குப் புதிய சந்தைகள்</a>
+                <span style="display: flex; align-items: center; gap: 6px; font-size: 12px; color: #6B7280;"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"></path><circle cx="12" cy="12" r="3"></circle></svg>15.6K வாசிப்புகள்</span>
+              </span>
+              <span aria-hidden="true" style="flex: 0 0 96px; height: 68px; overflow: hidden; background: #E5E7EB;"><img src="assets/photos/cargo-ship-harbour.jpg" alt="" style="display: block; width: 100%; height: 100%; object-fit: cover;"></span>
+            </li>
+          
+            <li style="display: flex; align-items: center; gap: 16px; padding: 14px 0; border-bottom: 1px solid #E5E7EB;">
+              <span aria-hidden="true" style="flex: 0 0 48px; font-family: Poppins, sans-serif; font-weight: 700; font-size: 46px; line-height: 1; color: transparent; -webkit-text-stroke: 1.5px #16A34A;">4</span>
+              <span style="flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; gap: 4px;">
+                <span style="font-size: 12px; font-weight: 700; letter-spacing: 0.8px; color: #15803D;">இலங்கை</span>
+                <a href="#" style="font-family: 'Noto Serif Tamil', 'Noto Serif', Georgia, serif; font-weight: 700; font-size: 16px; line-height: 1.45; color: #1F2937;">வடக்கில் சோதனைச் சாவடிகளில் பாதுகாப்பு அதிகரிப்பு</a>
+                <span style="display: flex; align-items: center; gap: 6px; font-size: 12px; color: #6B7280;"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"></path><circle cx="12" cy="12" r="3"></circle></svg>11.9K வாசிப்புகள்</span>
+              </span>
+              <span aria-hidden="true" style="flex: 0 0 96px; height: 68px; overflow: hidden; background: #E5E7EB;"><img src="assets/photos/security-checkpoint.jpg" alt="" style="display: block; width: 100%; height: 100%; object-fit: cover;"></span>
+            </li>
+          
+            <li style="display: flex; align-items: center; gap: 16px; padding: 14px 0; border-bottom: 1px solid #E5E7EB;">
+              <span aria-hidden="true" style="flex: 0 0 48px; font-family: Poppins, sans-serif; font-weight: 700; font-size: 46px; line-height: 1; color: transparent; -webkit-text-stroke: 1.5px #E11D2E;">5</span>
+              <span style="flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; gap: 4px;">
+                <span style="font-size: 12px; font-weight: 700; letter-spacing: 0.8px; color: #B91C1C;">சமூகம்</span>
+                <a href="#" style="font-family: 'Noto Serif Tamil', 'Noto Serif', Georgia, serif; font-weight: 700; font-size: 16px; line-height: 1.45; color: #1F2937;">திருகோணமலை கடற்கரையில் தன்னார்வலர்கள் சுத்திகரிப்புப் பணி</a>
+                <span style="display: flex; align-items: center; gap: 6px; font-size: 12px; color: #6B7280;"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"></path><circle cx="12" cy="12" r="3"></circle></svg>9.4K வாசிப்புகள்</span>
+              </span>
+              <span aria-hidden="true" style="flex: 0 0 96px; height: 68px; overflow: hidden; background: #E5E7EB;"><img src="assets/photos/beach-cleanup.jpg" alt="" style="display: block; width: 100%; height: 100%; object-fit: cover;"></span>
+            </li>
+          
+            <li style="display: flex; align-items: center; gap: 16px; padding: 14px 0; border-bottom: 1px solid #E5E7EB;">
+              <span aria-hidden="true" style="flex: 0 0 48px; font-family: Poppins, sans-serif; font-weight: 700; font-size: 46px; line-height: 1; color: transparent; -webkit-text-stroke: 1.5px #F97316;">6</span>
+              <span style="flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; gap: 4px;">
+                <span style="font-size: 12px; font-weight: 700; letter-spacing: 0.8px; color: #C2410C;">தொழில்நுட்பம்</span>
+                <a href="#" style="font-family: 'Noto Serif Tamil', 'Noto Serif', Georgia, serif; font-weight: 700; font-size: 16px; line-height: 1.45; color: #1F2937;">தமிழில் செயற்கை நுண்ணறிவு: புதிய வாய்ப்புகள்</a>
+                <span style="display: flex; align-items: center; gap: 6px; font-size: 12px; color: #6B7280;"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"></path><circle cx="12" cy="12" r="3"></circle></svg>7.1K வாசிப்புகள்</span>
+              </span>
+              <span aria-hidden="true" style="flex: 0 0 96px; height: 68px; overflow: hidden; background: #E5E7EB;"><img src="assets/photos/technology.jpg" alt="" style="display: block; width: 100%; height: 100%; object-fit: cover;"></span>
+            </li>
+          
+        </ol>
+      </div>
+    </div>
+    <aside style="flex: 1 1 320px; min-width: 0; background: radial-gradient(120% 90% at 100% 0%, rgba(249,115,22,.42) 0%, rgba(225,29,46,.22) 38%, rgba(31,41,55,0) 70%), #1F2937; color: #FFFFFF; padding: 40px 32px; display: flex; flex-direction: column; justify-content: center; gap: 16px;">
+      <div aria-hidden="true" style="display: flex; height: 4px; width: 96px;"><span style="flex: 6; background: #E11D2E;"></span><span style="flex: 3; background: #F97316;"></span><span style="flex: 2; background: #FACC15;"></span><span style="flex: 1; background: #16A34A;"></span></div>
+      <h2 style="margin: 0; font-family: 'Noto Serif Tamil', 'Noto Serif', Georgia, serif; font-weight: 700; font-size: 24px; line-height: 1.5;">சங்கதியுடன் தொடர்ந்து இணைந்திருங்கள்</h2>
+      <p style="margin: 0; font-size: 15px; color: #D1D5DB;">உங்கள் மின்னஞ்சல் முகவரியைப் பதிவுசெய்யுங்கள். எப்போது வேண்டுமானாலும் விலகிக்கொள்ளலாம்.</p>
+      <form style="display: flex; flex-direction: column; gap: 8px;">
+        <label for="sg-email" style="font-size: 13px; font-weight: 600; color: #E5E7EB;">மின்னஞ்சல் முகவரி</label>
+        <input id="sg-email" type="email" placeholder="you@example.com" style="min-height: 48px; border: 0; padding: 0 14px; font-family: inherit; font-size: 16px; color: #1F2937; background: #FFFFFF;">
+        <button type="submit" style="min-height: 48px; border: 0; background: #E11D2E; color: #FFFFFF; font-family: inherit; font-weight: 700; font-size: 15px; cursor: pointer;">இணைந்துகொள்ளுங்கள்</button>
+      </form>
+      <div style="margin-top: 12px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,.14); display: flex; flex-direction: column; gap: 12px;">
+        <span style="font-size: 13px; color: #D1D5DB;">அல்லது தலைப்புச் செய்திகளை WhatsApp இல் பெறுங்கள்</span>
+        <a href="#" style="display: flex; align-items: center; justify-content: center; gap: 10px; min-height: 48px; border: 1px solid #16A34A; background: rgba(22,163,74,.14); color: #FFFFFF; font-weight: 700; font-size: 15px;"><img src="assets/icons/white/whatsapp.png" alt="" style="width: 20px; height: 20px; display: block;">WhatsApp சேனலில் இணையுங்கள்</a>
+      </div>
+    </aside>
+  </section>
+
+  <footer style="background: #1F2937; color: #D1D5DB; font-size: 15px; overflow: hidden;">
+    <div aria-hidden="true" style="display: flex; height: 3px;">
+      <span style="flex: 6; background: #E11D2E;"></span><span style="flex: 3; background: #F97316;"></span><span style="flex: 2; background: #FACC15;"></span><span style="flex: 1; background: #16A34A;"></span>
+    </div>
+    <div style="max-width: 1320px; margin: 0 auto; padding: 64px 24px 0;">
+      <div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 28px; padding-bottom: 40px; border-bottom: 1px solid rgba(255,255,255,.12);">
+        <div style="display: flex; flex-direction: column; gap: 14px; max-width: 460px;">
+          <img src="assets/logo/sangathe-logo-light.png" alt="Sangathe Digital" style="display: block; height: 96px; width: auto; align-self: flex-start;">
+          <p style="margin: 0; font-family: 'Noto Serif Tamil', 'Noto Serif', Georgia, serif; font-size: 17px; line-height: 1.7; color: #9CA3AF;">[ஒரு வரி அறிமுகம் / tagline]</p>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 10px;">
+          <a href="#" aria-label="Facebook" style="width: 44px; height: 44px; border-radius: 999px; border: 1px solid rgba(255,255,255,.28); display: flex; align-items: center; justify-content: center;"><img src="assets/icons/white/facebook.png" alt="" style="width: 20px; height: 20px; display: block;"></a>
+          <a href="#" aria-label="X" style="width: 44px; height: 44px; border-radius: 999px; border: 1px solid rgba(255,255,255,.28); display: flex; align-items: center; justify-content: center;"><img src="assets/icons/white/x.png" alt="" style="width: 18px; height: 18px; display: block;"></a>
+          <a href="#" aria-label="YouTube" style="width: 44px; height: 44px; border-radius: 999px; border: 1px solid rgba(255,255,255,.28); display: flex; align-items: center; justify-content: center;"><img src="assets/icons/white/youtube.png" alt="" style="width: 22px; height: 22px; display: block;"></a>
+          <a href="#" aria-label="WhatsApp" style="width: 44px; height: 44px; border-radius: 999px; border: 1px solid rgba(255,255,255,.28); display: flex; align-items: center; justify-content: center;"><img src="assets/icons/white/whatsapp.png" alt="" style="width: 20px; height: 20px; display: block;"></a>
+          <a href="#" aria-label="Telegram" style="width: 44px; height: 44px; border-radius: 999px; border: 1px solid rgba(255,255,255,.28); display: flex; align-items: center; justify-content: center;"><img src="assets/icons/white/telegram.png" alt="" style="width: 20px; height: 20px; display: block;"></a>
+          <a href="#" style="display: flex; align-items: center; gap: 8px; min-height: 44px; margin-left: 8px; padding: 0 18px; border-radius: 999px; background: #FFFFFF; color: #1F2937; font-weight: 600; font-size: 14px;"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M6 11l6-6 6 6"></path></svg>மேலே செல்ல</a>
+        </div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 40px; padding: 48px 0;">
+        <nav aria-label="பிரிவுகள்" style="display: flex; flex-direction: column; gap: 14px;">
+          <h3 style="margin: 0; font-size: 12px; font-weight: 600; letter-spacing: 2px; color: #9CA3AF;">பிரிவுகள்</h3>
+          <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px 20px;">
+            <a href="#" style="color: #F3F4F6;">இலங்கை</a><a href="#" style="color: #F3F4F6;">உலகம்</a><a href="#" style="color: #F3F4F6;">அரசியல்</a><a href="#" style="color: #F3F4F6;">வணிகம்</a><a href="#" style="color: #F3F4F6;">விளையாட்டு</a><a href="#" style="color: #F3F4F6;">சினிமா</a><a href="#" style="color: #F3F4F6;">தொழில்நுட்பம்</a><a href="#" style="color: #F3F4F6;">காணொளி</a>
+          </div>
+        </nav>
+        <nav aria-label="Sangathe" style="display: flex; flex-direction: column; gap: 10px;">
+          <h3 style="margin: 0 0 4px; font-size: 12px; font-weight: 600; letter-spacing: 2px; color: #9CA3AF;">SANGATHE</h3>
+          <a href="#" style="color: #F3F4F6;">எங்களைப் பற்றி</a><a href="#" style="color: #F3F4F6;">ஆசிரியர் குழு</a><a href="#" style="color: #F3F4F6;">தொடர்புகொள்ள</a><a href="#" style="color: #F3F4F6;">விளம்பரம் செய்ய</a>
+        </nav>
+        <nav aria-label="கொள்கைகள்" style="display: flex; flex-direction: column; gap: 10px;">
+          <h3 style="margin: 0 0 4px; font-size: 12px; font-weight: 600; letter-spacing: 2px; color: #9CA3AF;">கொள்கைகள்</h3>
+          <a href="#" style="color: #F3F4F6;">தனியுரிமைக் கொள்கை</a><a href="#" style="color: #F3F4F6;">பயன்பாட்டு விதிமுறைகள்</a><a href="#" style="color: #F3F4F6;">திருத்தக் கொள்கை</a>
+        </nav>
+        <div style="display: flex; flex-direction: column; gap: 10px;">
+          <h3 style="margin: 0 0 4px; font-size: 12px; font-weight: 600; letter-spacing: 2px; color: #9CA3AF;">தொடர்புக்கு</h3>
+          <span style="color: #F3F4F6;">[அலுவலக முகவரி]</span><span style="color: #F3F4F6;">[மின்னஞ்சல் முகவரி]</span><span style="color: #F3F4F6;">[தொலைபேசி இலக்கம்]</span>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px 24px; padding: 22px 0; border-top: 1px solid rgba(255,255,255,.12); font-size: 13px; color: #9CA3AF;">
+        <span>© 2026 Sangathe.com. அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை.</span>
+        <span style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 20px;"><a href="#" style="color: #9CA3AF;">தனியுரிமை</a><a href="#" style="color: #9CA3AF;">விதிமுறைகள்</a><span>Designed &amp; developed by <a href="#" style="color: #F3F4F6; font-weight: 600;">Codexium</a></span></span>
+      </div>
+    </div>
+    
+  </footer>
+</div>
+
+<script>
+// Reference behaviour for the "More top stories" carousel: 4 cards visible, auto-advances every 4.5s, pauses on hover.
+(function () {
+  var track = document.querySelector('[data-carousel-track]');
+  var viewport = document.querySelector('[data-carousel-viewport]');
+  var dots = Array.prototype.slice.call(document.querySelectorAll('[data-action="go"]'));
+  if (!track) return;
+  var slide = 0, max = dots.length - 1, paused = false;
+  function render() {
+    track.style.transform = 'translateX(calc(' + (-slide) + ' * (100% + 28px) / 4))';
+    dots.forEach(function (d, i) {
+      var s = d.querySelector('span');
+      s.style.width = i === slide ? '24px' : '8px';
+      s.style.background = i === slide ? '#E11D2E' : '#D1D5DB';
+    });
+  }
+  function step(n) { slide += n; if (slide > max) slide = 0; if (slide < 0) slide = max; render(); }
+  document.querySelector('[data-action="prev"]').addEventListener('click', function () { step(-1); });
+  document.querySelector('[data-action="next"]').addEventListener('click', function () { step(1); });
+  dots.forEach(function (d, i) { d.addEventListener('click', function () { slide = i; render(); }); });
+  viewport.addEventListener('mouseenter', function () { paused = true; });
+  viewport.addEventListener('mouseleave', function () { paused = false; });
+  setInterval(function () { if (!paused) step(1); }, 4500);
+})();
+</script>
+</body>
+</html>
